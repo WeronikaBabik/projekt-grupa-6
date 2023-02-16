@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/migace/parcel-project-template-pl-main.git"
+    "url": "git+https://github.com/VeranikaBabik/projekt-grupa-6.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "VeranikaBabik <VeranikaBabik@terefere.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/migace/parcel-project-template-pl-main/issues"
+    "url": "https://github.com/VeranikaBabik/projekt-grupa-6/issues"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
