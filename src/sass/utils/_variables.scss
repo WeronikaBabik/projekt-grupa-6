@@ -28,3 +28,19 @@ $boxShadow: rgba(212, 20, 67, 0.1);
 /* Fonts */
 $mainFont: 'DM Sans', sans-serif;
 $dekorationFont: 'Titan One', cursive;
+
+/* Global */
+body {
+  font-family: $mainFont;
+  color: #000;
+  padding-inline-start: 0px;
+}
+ul {
+  list-style: none;
+}
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
