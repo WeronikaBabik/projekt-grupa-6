@@ -101,7 +101,7 @@ a {
     gap: 29px;
   }
 }
-.productul {
+.product > ul {
   padding: 0;
 }
 .product__grid-item {
@@ -366,32 +366,4 @@ a {
   .product__grid-third::before {
     background-image: url("/src/images/desktopProductsPic3@2x.png");
   }
-}
-/* Backgrounds color */
-/* Producsts color */
-/* Fonts color */
-/* Buttons color */
-/* Icons fill */
-/* Shadows */
-/* Fonts */
-/* Global */
-body {
-  font-family: "DM Sans", sans-serif;
-  color: #000;
-  -webkit-padding-start: 0px;
-          padding-inline-start: 0px;
-  padding: 0;
-  margin: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-ol {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
