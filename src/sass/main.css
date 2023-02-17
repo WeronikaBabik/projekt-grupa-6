@@ -3,12 +3,33 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
-li {
-  list-style: none;
+/* Backgrounds color */
+/* Producsts color */
+/* Fonts color */
+/* Buttons color */
+/* Icons fill */
+/* Shadows */
+/* Fonts */
+/* Global */
+body {
+  font-family: "DM Sans", sans-serif;
+  color: #000;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 ul {
-  padding: 0;
+  list-style: none;
+}
+
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .product {
@@ -219,7 +240,7 @@ ul {
   text-align: center;
   letter-spacing: 0.04rem;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   padding-top: 150px;
   padding-bottom: 30px;
   position: relative;
@@ -230,7 +251,7 @@ ul {
   font-size: 14;
   line-height: 1.52;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   margin: 0 auto;
   padding: 20px;
 }
