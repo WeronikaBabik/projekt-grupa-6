@@ -2,6 +2,7 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
+<<<<<<< HEAD
 
 // Style dla pliku z przykładem HTML fragmentu
 @import './utils/mixins';
@@ -9,3 +10,6 @@
 @import './partials/typography';
 @import './partials/product';
 @import './partials/button';
+=======
+@import './utils/variables';
+>>>>>>> 05433d8acdda60a338140d7a761653d70953a1bb
