@@ -1,0 +1,259 @@
+@charset "UTF-8";
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+.product {
+  padding: 121px 20px 98px 20px;
+  margin: 0 auto;
+  list-style: none;
+  text-decoration: none;
+}
+.product__title {
+  text-align: center;
+  font-family: "Titan One", cursive;
+  font-size: 18;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+.product__name {
+  font-family: "Titan One", cursive;
+  font-weight: 400;
+  font-size: 34;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-bottom: 144px;
+}
+@media screen and (min-width: 768px) {
+  .product__name {
+    margin-bottom: 144px;
+  }
+}
+.product__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 190px;
+}
+@media screen and (min-width: 768px) {
+  .product__grid {
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product__grid {
+    gap: 29px;
+  }
+}
+.product__grid-item {
+  max-width: 280px;
+  width: 100vw;
+  border-radius: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .product__grid-item {
+    max-width: 220px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product__grid-item {
+    max-width: 329px;
+  }
+}
+.product__grid-first {
+  background-color: #ffb8ca;
+  position: relative;
+}
+.product__grid-first::before {
+  content: "";
+  background-image: url("/src/images/home-pic1.png");
+  width: 249px;
+  height: 252px;
+  position: absolute;
+  bottom: 335px;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .product__grid-first::before {
+    bottom: 380px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product__grid-first::before {
+    bottom: 320px;
+  }
+}
+.product__grid-first::after {
+  content: "";
+  width: 26px;
+  height: 6px;
+  background-image: url("/src/images/Group4.png");
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  bottom: 50%;
+}
+@media screen and (min-width: 768px) {
+  .product__grid-first::after {
+    bottom: 55%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product__grid-first::after {
+    bottom: 50%;
+  }
+}
+.product__grid-second {
+  background-color: #f0d1a5;
+  position: relative;
+}
+.product__grid-second::before {
+  content: "";
+  background-image: url("/src/images/home-pic1-2.png");
+  width: 249px;
+  height: 252px;
+  position: absolute;
+  bottom: 340px;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .product__grid-second::before {
+    bottom: 380px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product__grid-second::before {
+    bottom: 320px;
+  }
+}
+.product__grid-second::after {
+  content: "";
+  width: 26px;
+  height: 6px;
+  background-image: url("/src/images/Group4.png");
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  bottom: 50%;
+}
+@media screen and (min-width: 768px) {
+  .product__grid-second::after {
+    bottom: 55%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product__grid-second::after {
+    bottom: 50%;
+  }
+}
+.product__grid-third {
+  background-color: #c2e297;
+  position: relative;
+}
+.product__grid-third::before {
+  content: "";
+  background-image: url("/src/images/home-pic1-3.png");
+  width: 249px;
+  height: 252px;
+  position: absolute;
+  bottom: 340px;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .product__grid-third::before {
+    bottom: 380px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product__grid-third::before {
+    bottom: 320px;
+  }
+}
+.product__grid-third::after {
+  content: "";
+  width: 26px;
+  height: 6px;
+  background-image: url("/src/images/Group4.png");
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  bottom: 50%;
+}
+@media screen and (min-width: 768px) {
+  .product__grid-third::after {
+    bottom: 55%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product__grid-third::after {
+    bottom: 50%;
+  }
+}
+.product__grid-title {
+  font-family: "Titan One", cursive;
+  font-size: 20;
+  line-height: 1.15;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.04rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  position: relative;
+}
+.product__grid-description {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14;
+  line-height: 1.52;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .product__grid-description {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+button {
+  border-radius: 50%;
+  border-style: none;
+  background: none;
+  padding-bottom: 41px;
+}
+button img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+button:hover,
+button:focus {
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
