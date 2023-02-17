@@ -51,7 +51,7 @@ a {
     font-size: 26;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .product__title {
     font-size: 30;
     line-height: 1.13;
@@ -75,7 +75,7 @@ a {
     margin-bottom: 144px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .product__name {
     font-size: 58;
     line-height: 1.13;
@@ -96,7 +96,7 @@ a {
     flex-wrap: nowrap;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .product__grid {
     gap: 29px;
   }
@@ -119,7 +119,7 @@ a {
     width: 100%;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .product__grid-item {
     max-width: 329px;
   }
@@ -146,7 +146,7 @@ a {
     height: 226px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .product__grid-first::before {
     background-image: url("/src/images/desktopProductsPic1.png");
     width: 335px;
@@ -169,7 +169,7 @@ a {
     bottom: 58%;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .product__grid-first::after {
     bottom: 53%;
   }
@@ -196,7 +196,7 @@ a {
     height: 226px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .product__grid-second::before {
     background-image: url("/src/images/desktopProductsPic2.png");
     bottom: 400px;
@@ -219,7 +219,7 @@ a {
     bottom: 58%;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .product__grid-second::after {
     bottom: 53%;
   }
@@ -246,7 +246,7 @@ a {
     height: 226px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .product__grid-third::before {
     background-image: url("/src/images/desktopProductsPic3.png");
     bottom: 400px;
@@ -269,7 +269,7 @@ a {
     bottom: 58%;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .product__grid-third::after {
     bottom: 53%;
   }
@@ -292,7 +292,7 @@ a {
     padding-top: 130px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .product__grid-title {
     font-size: 30;
     line-height: 1.13;
@@ -308,7 +308,7 @@ a {
   margin: 0 auto;
   padding: 20px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .product__grid-description {
     font-size: 16;
     line-height: 1.76;
