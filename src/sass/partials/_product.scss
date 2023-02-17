@@ -10,6 +10,14 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: $headerSecondFontColor;
+    @include tablet {
+      font-size: 26;
+    }
+    @include desktop {
+      font-size: 30;
+      line-height: 1.13;
+      letter-spacing: 0.04em;
+    }
   }
   &__name {
     font-family: $dekorationFont;
@@ -22,7 +30,14 @@
     color: $headerFontColor;
     margin-bottom: 144px;
     @include tablet {
+      font-size: 48;
       margin-bottom: 144px;
+    }
+    @include desktop {
+      font-size: 58;
+      line-height: 1.13;
+      letter-spacing: 0.06;
+      margin-bottom: 220px;
     }
   }
   &__grid {
@@ -39,10 +54,12 @@
       gap: 29px;
     }
   }
+  &ul{
+    padding: 0;
+  }
   &__grid-item {
     max-width: 280px;
     width: 100vw;
-
     border-radius: 24px;
     display: flex;
     flex-wrap: wrap;
@@ -62,7 +79,7 @@
     position: relative;
     &::before {
       content: '';
-      background-image: url('/src/images/home-pic1.png');
+      background-image: url('/src/images/mobileProductsPic1.png');
       width: 249px;
       height: 252px;
       position: absolute;
@@ -70,26 +87,32 @@
       background-size: cover;
       background-position: center;
       @include tablet {
-        bottom: 380px;
+        background-image: url('/src/images/tabletProductsPic1.png');
+        bottom: 373px;
+        width: 220px;
+        height: 226px;
       }
       @include desktop {
-        bottom: 320px;
+       background-image: url("/src/images/desktopProductsPic1.png");
+       width: 335px;
+        height: 335px;
+       bottom: 400px;
       }
     }
     &::after {
       content: '';
       width: 26px;
       height: 6px;
-      background-image: url('/src/images/Group4.png');
+      background-image: url('/src/images/productsThreeDots.png');
       position: absolute;
       background-size: cover;
       background-position: center;
       bottom: 50%;
       @include tablet {
-        bottom: 55%;
+        bottom: 58%;
       }
       @include desktop {
-        bottom: 50%;
+        bottom: 53%;
       }
     }
   }
@@ -98,7 +121,7 @@
     position: relative;
     &::before {
       content: '';
-      background-image: url('/src/images/home-pic1-2.png');
+      background-image: url('/src/images/mobileProductsPic2.png');
       width: 249px;
       height: 252px;
       position: absolute;
@@ -106,27 +129,32 @@
       background-size: cover;
       background-position: center;
       @include tablet {
-        bottom: 380px;
+        background-image: url('/src/images/tabletProductsPic2.png');
+        bottom: 373px;
+        width: 220px;
+        height: 226px;
       }
       @include desktop {
-        bottom: 320px;
+        background-image: url("/src/images/desktopProductsPic2.png");
+        bottom: 400px;
+        width: 335px;
+        height: 335px;
       }
     }
     &::after {
       content: '';
       width: 26px;
       height: 6px;
-      background-image: url('/src/images/Group4.png');
+      background-image: url('/src/images/productsThreeDots.png');
       position: absolute;
       background-size: cover;
       background-position: center;
-
       bottom: 50%;
       @include tablet {
-        bottom: 55%;
+        bottom: 58%;
       }
       @include desktop {
-        bottom: 50%;
+        bottom: 53%;
       }
     }
   }
@@ -135,7 +163,7 @@
     position: relative;
     &::before {
       content: '';
-      background-image: url('/src/images/home-pic1-3.png');
+      background-image: url('/src/images/mobileProductsPic3.png');
       width: 249px;
       height: 252px;
       position: absolute;
@@ -143,26 +171,32 @@
       background-size: cover;
       background-position: center;
       @include tablet {
-        bottom: 380px;
+        background-image: url('/src/images/tabletProductsPic3.png');
+        bottom: 373px;
+        width: 220px;
+        height: 226px;
       }
       @include desktop {
-        bottom: 320px;
+        background-image: url("/src/images/desktopProductsPic3.png");
+        bottom: 400px;
+        width: 335px;
+        height: 335px;
       }
     }
     &::after {
       content: '';
       width: 26px;
       height: 6px;
-      background-image: url('/src/images/Group4.png');
+      background-image: url('/src/images/productsThreeDots.png');
       position: absolute;
       background-size: cover;
       background-position: center;
       bottom: 50%;
       @include tablet {
-        bottom: 55%;
+        bottom: 58%;
       }
       @include desktop {
-        bottom: 50%;
+        bottom: 53%;
       }
     }
   }
@@ -178,6 +212,14 @@
     padding-top: 150px;
     padding-bottom: 30px;
     position: relative;
+    @include tablet{
+      padding-top: 130px;
+    }
+    @include desktop {
+     
+      font-size: 30;
+      line-height: 1.13;
+    }
   }
   &__grid-description {
     font-family: $mainFont;
@@ -189,6 +231,8 @@
     margin: 0 auto;
     padding: 20px;
     @include desktop {
+      font-size: 16;
+      line-height: 1.76;
       padding-left: 40px;
       padding-right: 40px;
     }
@@ -208,4 +252,49 @@ button {
 button:hover,
 button:focus {
   cursor: pointer;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .product {
+    &__grid-first::before {
+      background-image: url('/src/images/mobileProductsPic1@2x.png');
+    }
+
+    &__grid-second::before {
+      background-image: url('/src/images/mobileProductsPic2@2x.png');
+    }
+
+    &__grid-third::before {
+      background-image: url('/src/images/mobileProductsPic3@2x.png');
+    }
+  }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .product {
+    &__grid-first::before {
+      background-image: url('/src/images/tabletProductsPic1@2x.png');
+    }
+
+    &__grid-second::before {
+      background-image: url('/src/images/tabletProductsPic2@2x.png');
+    }
+
+    &__grid-third::before {
+      background-image: url('/src/images/tabletProductsPic3@2x.png');
+    }
+  }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .product {
+    &__grid-first::before {
+      background-image: url('/src/images/desktopProductsPic1@2x.png');
+    }
+
+    &__grid-second::before {
+      background-image: url('/src/images/desktopProductsPic2@2x.png');
+    }
+
+    &__grid-third::before {
+      background-image: url('/src/images/desktopProductsPic3@2x.png');
+    }
+  }
 }
