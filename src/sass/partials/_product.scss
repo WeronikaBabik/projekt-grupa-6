@@ -238,7 +238,7 @@
     }
   }
 }
-button {
+.arrow-btn  {
   border-radius: 50%;
   border-style: none;
   background: none;
@@ -249,8 +249,8 @@ button {
     height: 40px;
   }
 }
-button:hover,
-button:focus {
+.arrow-btn:hover,
+.arrow-btn:focus {
   cursor: pointer;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {

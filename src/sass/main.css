@@ -317,20 +317,20 @@ a {
   }
 }
 
-button {
+.arrow-btn {
   border-radius: 50%;
   border-style: none;
   background: none;
   padding-bottom: 41px;
 }
-button img {
+.arrow-btn img {
   border-radius: 50%;
   width: 40px;
   height: 40px;
 }
 
-button:hover,
-button:focus {
+.arrow-btn:hover,
+.arrow-btn:focus {
   cursor: pointer;
 }
 
