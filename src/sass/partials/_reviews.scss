@@ -4,31 +4,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  picture {
+  &__image {
     width: 85px;
     height: 85px;
     margin-bottom: 29px;
-    @media screen and (min-width: 768px) and (max-width: 1280px) {
+    @include tablet {
       margin-bottom: 19px;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       margin-bottom: 15px;
     }
   }
-}
-.reviews-section__slider {
-  width: calc(100% - 40px);
-  background: #fafafa;
-  position: relative;
-  z-index: 2;
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
-    width: calc(100% - 148px);
+  &__slider {
+    width: calc(100% - 40px);
+    background: #fafafa;
+    position: relative;
+    z-index: 2;
+    @include tablet {
+      width: calc(100% - 148px);
+    }
+    @include desktop {
+      width: calc(100% - 352px);
+    }
   }
-  @media screen and (min-width: 1280px) {
-    width: calc(100% - 352px);
-  }
-  .reviews-section__review {
+  &__review {
     color: #000;
     font-family: $mainFont;
     font-style: normal;
@@ -40,11 +39,11 @@
     margin: auto;
     position: relative;
     text-decoration: none;
-    @media screen and (min-width: 768px) and (max-width: 1280px) {
+    @include tablet {
       font-size: 14px;
       line-height: 216%;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       font-size: 16px;
       line-height: 186%;
     }
@@ -88,11 +87,11 @@
   color: #000000;
   margin: 30px 0 0 0;
 
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
+  @include tablet {
     font-size: 16px;
     margin: 24px 0 0 0;
   }
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     font-size: 20px;
     margin: 15px 0 0 0;
   }
@@ -121,10 +120,10 @@
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
+  @include tablet {
     margin-top: 35px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     margin-top: 35px;
   }
   .reviews-section__homeBtn {
