@@ -2,5 +2,6 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
+@use './utils/mixins' as *;
 @import './utils/variables';
 @import './partials/reviews';
