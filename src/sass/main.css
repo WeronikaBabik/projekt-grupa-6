@@ -53,6 +53,14 @@ a {
     padding-top: 130px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .about__label {
+    font-size: 30px;
+    line-height: 1.1333333333;
+    letter-spacing: 0.04em;
+    padding-top: 125px;
+  }
+}
 .about__header {
   font-family: "Titan One", cursive;
   color: #d41443;
@@ -73,6 +81,15 @@ a {
     padding-bottom: 50px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .about__header {
+    font-size: 58px;
+    line-height: 1.1379310345;
+    letter-spacing: 0.06em;
+    padding-top: 15px;
+    padding-bottom: 102px;
+  }
+}
 .about__main_container {
   display: block;
   background-image: url("../images/mobileAboutBG.png");
@@ -81,6 +98,11 @@ a {
   background-size: 100%;
   width: 100%;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .about__main_container {
+    background-image: url("../images/mobileAboutBG@2x.png");
+  }
+}
 @media screen and (min-width: 768px) {
   .about__main_container {
     background-image: none;
@@ -88,13 +110,33 @@ a {
     align-items: end;
   }
 }
+@media screen and (min-width: 1280px) {
+  .about__main_container {
+    align-items: center;
+    background-image: url("../images/desktopAboutBG.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .about__main_container {
+    background-image: url("../images/desktopAboutBG@2x.png");
+  }
+}
 .about__image {
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .about__image {
     padding-left: 39px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__image {
+    padding-left: 112px;
   }
 }
 .about__description_container {
@@ -110,8 +152,15 @@ a {
     line-height: 176%;
   }
 }
-.about__description__1 {
-  margin: 0;
+@media screen and (min-width: 1280px) {
+  .about__description_container {
+    padding: 0 117px 0px 74px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__description__1 {
+    font-size: 16px;
+  }
 }
 .about__description__2 {
   padding: 31px 0 0 0;
@@ -122,14 +171,25 @@ a {
     letter-spacing: 0.04em;
   }
 }
+@media screen and (min-width: 1280px) {
+  .about__description__2 {
+    padding: 35px 0 0 0;
+    line-height: 194%;
+  }
+}
 .about__button {
   position: relative;
   margin: 21px 0 0 50px;
 }
 @media screen and (min-width: 768px) {
   .about__button {
-    letter-spacing: 0.04em;
     margin: 62px 0 0 396px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__button {
+    position: absolute;
+    margin: -60px 0 0 702px;
   }
 }
 
