@@ -38,6 +38,9 @@
 }
 
 @include tablet {
+  .advantages {
+    padding: 0 36px;
+  }
   .advantages__list {
     flex-direction: row;
   }
@@ -50,6 +53,9 @@
 }
 
 @include desktop {
+  .advantages {
+    padding: 0 115px;
+  }
   .advantages__image {
     margin-bottom: 40px;
   }
