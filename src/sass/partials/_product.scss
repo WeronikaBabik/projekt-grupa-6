@@ -42,13 +42,15 @@
   }
   &__grid {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 130px;
     @include tablet {
       gap: 20px;
-      flex-wrap: nowrap;
+      flex-direction: row;
+     flex-wrap: nowrap;
     }
     @include desktop {
       gap: 29px;

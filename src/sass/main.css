@@ -85,6 +85,7 @@ a {
 }
 .product__grid {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -93,6 +94,7 @@ a {
 @media screen and (min-width: 768px) {
   .product__grid {
     gap: 20px;
+    flex-direction: row;
     flex-wrap: nowrap;
   }
 }
