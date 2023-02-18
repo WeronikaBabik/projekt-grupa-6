@@ -1,0 +1,86 @@
+.about {
+  background-color: $footerBackground;
+  &__label {
+    font-family: $dekorationFont;
+    color: $headerSecondFontColor;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(21 / 18);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 125px 0 0 0;
+    @include tablet {
+      font-size: 26px;
+      line-height: calc(30 / 26);
+      padding-top: 130px;
+    }
+  }
+  &__header {
+    font-family: $dekorationFont;
+    color: $headerFontColor;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: calc(39 / 34);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 15px 61px 26px 59px;
+    @include tablet {
+      font-size: 48px;
+      line-height: calc(55 / 48);
+      padding-top: 16px;
+      padding-bottom: 50px;
+    }
+  }
+  &__main_container {
+    display: block;
+    background-image: url('../images/mobileAboutBG.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100%;
+    width: 100%;
+    @include tablet {
+      background-image: none;
+      display: flex;
+      align-items: end;
+    }
+  }
+  &__image {
+    display: block;
+    margin: 0 auto;
+    @include tablet {
+      padding-left: 39px;
+    }
+  }
+  &__description_container {
+    padding: 46px 50px 0px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    @include tablet {
+      padding: 0 36px 0px 17px;
+      font-size: 14px;
+      line-height: 176%;
+    }
+  }
+  &__description__1 {
+    margin: 0;
+  }
+  &__description__2 {
+    padding: 31px 0 0 0;
+    color: $secondaryFontColor;
+    @include tablet {
+      letter-spacing: 0.04em;
+    }
+  }
+  &__button {
+    position: relative;
+    margin: 21px 0 0 50px;
+    @include tablet {
+      letter-spacing: 0.04em;
+      margin: 62px 0 0 396px;
+    }
+  }
+}
