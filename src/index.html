@@ -17,13 +17,14 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
-    <include src="./partials/products.html"></include>
-
-    <main></main>
+    <main>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/advantages.html"></include>
+      <include src="./partials/reviews.html"></include>
+    </main>
 
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
     <script src="./index.js" type="module"></script>
