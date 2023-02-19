@@ -1,8 +1,7 @@
 .advantages {
   width: 100%;
   background: $footerBackground;
-  padding: 0 20px;
-  margin-top: 39px;
+  padding: 39px 20px 0 20px;
   &__list {
     display: flex;
     flex-direction: column;
@@ -34,7 +33,7 @@
 }
 @include tablet {
   .advantages {
-    padding: 0 36px;
+    padding: 39px 36px 0 36px;
   }
   .advantages__list {
     flex-direction: row;
@@ -48,7 +47,7 @@
 }
 @include desktop {
   .advantages {
-    padding: 0 115px;
+    padding: 39px 115px 0 115px;
   }
   .advantages__image {
     margin-bottom: 40px;
