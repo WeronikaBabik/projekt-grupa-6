@@ -227,8 +227,8 @@
     }
 
     height: 399px;
-    background-image: url('../images/tabletHeaderPic3.png'), url('../images/tabletHeaderPic2.png'),
-      url('../images/tabletHeaderEllipse.png');
+    background-image: url('/src/images/tabletHeaderpic3.png'),
+      url('/src/images/tabletHeaderPic2.png'), url('/src/images/tabletHeaderEllipse.png');
     background-position-x: 568px, 378px, 307px;
     background-position-y: 270px, 63px, 31px;
     animation: icecream 3s ease-in 1 normal none;
@@ -364,7 +364,7 @@
       right: -15px;
     }
     background-image: url('/src/images/desktopHeaderPic3.png'),
-      url('/src/images/desktopHeaderPic2.png'), url('../images/desktopHeaderEllipse.png');
+      url('/src/images/desktopHeaderPic2.png'), url('/src/images/desktopHeaderEllipse.png');
     background-position-x: 882px, 594px, 475px;
     background-position-y: 432px, 107px, 51px;
     animation: icecream 3s ease-in 1 normal none;
