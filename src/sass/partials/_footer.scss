@@ -1,0 +1,61 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.container {
+  display: flex;
+  background-color: $footerBackground;
+  flex-direction: column;
+  width: 100%;
+  padding: 113px 66px 0 20px;
+}
+
+.footer {
+  display: flex;
+  letter-spacing: 0.03em;
+  justify-content: center;
+
+  &__title {
+    display: flex;
+    font-family: $dekorationFont;
+    flex-direction: column;
+
+    &-what {
+      font-size: 18px;
+      color: $headerSecondFontColor;
+      margin-bottom: 18px;
+    }
+
+    &-how {
+      font-size: 34px;
+      color: $headerFontColor;
+      margin-top: 0px;
+      margin-bottom: 43px;
+    }
+  }
+
+  &__rights {
+    font-size: 14px;
+  }
+
+  &__contacts {
+    display: inline;
+  }
+}
+
+.footer__contacts-item {
+  display: flex;
+
+  margin-left: 28px;
+}
+
+.footer__contacts-icon {
+  width: 32px;
+  height: 32px;
+  fill: white;
+}
+
+.footer__contacts-media {
+  list-style: none;
+  display: flex;
+  margin-left: 47px;
+}
