@@ -5,7 +5,7 @@
   "homepage": "https://github.com/VeranikaBabik/projekt-grupa-6",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url projekt-grupa-6"
+    "build": "parcel build src/*.html --public-url /projekt-grupa-6/"
   },
   "repository": {
     "type": "git",
