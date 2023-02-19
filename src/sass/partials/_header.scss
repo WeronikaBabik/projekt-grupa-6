@@ -1,0 +1,553 @@
+.header {
+  z-index: 1;
+  width: 100%;
+  height: 502px;
+
+  background-color: $headerBackdround;
+  padding: 6px 20px 0 20px;
+  position: relative;
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav {
+    display: none;
+  }
+  &__btn-buynow {
+    display: none;
+    padding: 0;
+  }
+  &__burger-icon {
+    cursor: pointer;
+  }
+  &__head {
+    margin-top: 135px;
+    font-family: $dekorationFont;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #fff;
+  }
+  &__head-colorpart {
+    color: $headerFontColor;
+    font-size: 48px;
+    line-height: 46px;
+  }
+  &__head-bttns {
+    display: flex;
+    gap: 15px;
+    margin-top: 21px;
+  }
+  &__bttn {
+    display: flex;
+    height: 24px;
+    border: none;
+    border-radius: 22px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border-radius 250ms;
+    &:hover {
+      border-bottom-right-radius: 50px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  }
+  &__bttn--products {
+    width: 63px;
+    background-color: $headerFontColor;
+  }
+  &__bttn--how {
+    width: 89px;
+    background-color: #fff;
+  }
+  &__head-link--1 {
+    line-height: 10px;
+    font-size: 8px;
+    color: #fff;
+  }
+  &__head-link--2 {
+    line-height: 10px;
+    font-size: 8px;
+    color: $headerFontColor;
+  }
+  &__milk {
+    display: none;
+  }
+  &__count {
+    display: none;
+  }
+
+  background-image: url('../images/mobileHeaderPic2.png'), url('../images/mobileHeaderEllipse.png');
+  background-repeat: no-repeat;
+  background-position-x: 117px, 36px;
+  background-position-y: 92px, 83px;
+  animation: icecream 3s ease-in 1 normal none;
+  @keyframes icecream {
+    0% {
+      background-position-x: 117px, 36px;
+      background-position-y: -100px, 83px;
+    }
+    30% {
+      background-position-x: 117px, 36px;
+      background-position-y: 92px, 83px;
+    }
+    60% {
+      background-position-x: 117px, 36px;
+      background-position-y: 20px, 83px;
+    }
+    70% {
+      background-position-x: 117px, 36px;
+      background-position-y: 92px, 83px;
+    }
+
+    85% {
+      background-position-x: 117px, 36px;
+      background-position-y: 40px, 83px;
+    }
+
+    100% {
+      background-position-x: 117px, 36px;
+      background-position-y: 92px, 83px;
+    }
+  }
+
+  @include tablet {
+    padding-top: 38px;
+    padding-left: 34px;
+    padding-right: 34px;
+    &__btn-buynow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      width: 159px;
+      height: 44px;
+      background-color: #fff;
+      border: none;
+      border-radius: 22px;
+      cursor: pointer;
+
+      transition: border-radius 250ms;
+      &:hover {
+        border-bottom-right-radius: 50px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+    }
+    &__btn-tittle {
+      font-weight: 700;
+      font-size: 16px;
+
+      color: $headerFontColor;
+      margin: 15px 0 16px 0;
+    }
+    &__burger-icon {
+      position: absolute;
+      top: 52px;
+      right: 224px;
+    }
+    &__head {
+      font-size: 22px;
+      line-height: 25px;
+      margin-top: 15px;
+    }
+    &__head-colorpart {
+      font-size: 34px;
+      line-height: 90.5%;
+    }
+    &__milk {
+      display: flex;
+      margin-top: 19px;
+    }
+    &__milk-text {
+      color: #fff;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 150%;
+      width: 114px;
+    }
+    &__milk-box {
+      margin-top: 35px;
+      margin-bottom: 32px;
+      > img {
+        cursor: pointer;
+      }
+    }
+
+    &__count {
+      display: block;
+      position: absolute;
+      top: 102px;
+      right: 44px;
+    }
+    &__cafes-number,
+    &__trucks-number {
+      font-family: $dekorationFont;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 32px;
+      text-align: right;
+      letter-spacing: 0.04em;
+      color: $headerFontColor;
+      color: $headerBackdround;
+      margin: 0;
+    }
+    &__cafes-text,
+    &__trucks-text {
+      font-weight: 400;
+      font-size: 8px;
+      margin: 0;
+      text-align: right;
+      color: #fff;
+    }
+    &__cafes-text {
+      margin-bottom: 20px;
+    }
+    &__cafes-number::after,
+    &__trucks-number::after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #ffffff;
+      z-index: -1;
+    }
+    &__cafes-number::after {
+      top: 0;
+      right: -9px;
+    }
+    &__trucks-number::after {
+      right: -9px;
+    }
+
+    height: 399px;
+    background-image: url('../images/tabletHeaderpic3.png'), url('../images/tabletHeaderPic2.png'),
+      url('../images/tabletHeaderEllipse.png');
+    background-position-x: 568px, 378px, 307px;
+    background-position-y: 270px, 63px, 31px;
+    animation: icecream 3s ease-in 1 normal none;
+    @keyframes icecream {
+      0% {
+        background-position-x: 568px, 378px, 307px;
+        background-position-y: 270px, -1000px, 31px;
+      }
+      30% {
+        background-position-x: 568px, 378px, 307px;
+        background-position-y: 270px, 63px, 31px;
+      }
+      60% {
+        background-position-x: 568px, 378px, 307px;
+        background-position-y: 270px, 20px, 31px;
+      }
+      70% {
+        background-position-x: 568px, 378px, 307px;
+        background-position-y: 270px, 63px, 31px;
+      }
+
+      85% {
+        background-position-x: 568px, 378px, 307px;
+        background-position-y: 270px, 43px, 31px;
+      }
+
+      100% {
+        background-position-x: 568px, 378px, 307px;
+        background-position-y: 270px, 63px, 31px;
+      }
+    }
+  }
+
+  @include desktop {
+    padding: 38px 115px 0 46px;
+    height: 665px;
+    &__logo {
+      margin-right: 0;
+    }
+
+    &__nav {
+      display: block;
+    }
+    &__nav-list {
+      display: flex;
+      justify-content: space-around;
+      gap: 35px;
+    }
+    &__nav-link {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 21px;
+      color: #fff;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover {
+        color: $headerFontColor;
+      }
+    }
+    &__burger-icon {
+      display: none;
+    }
+    &__head-box {
+      margin-left: 81px;
+    }
+    &__head {
+      font-size: 38px;
+      line-height: 44px;
+      margin-top: 84px;
+    }
+    &__head-colorpart {
+      font-size: 58px;
+      line-height: 90.5%;
+    }
+    &__bttn {
+      height: 40px;
+    }
+    &__bttn--products {
+      width: 104px;
+    }
+    &__bttn--how {
+      width: 138px;
+    }
+    &__head-link--1,
+    &__head-link--2 {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__milk {
+      margin-top: 56px;
+    }
+    &__milk-text {
+      font-size: 14px;
+      line-height: 140%;
+      width: 189px;
+    }
+    &__milk-box {
+      margin-top: 45px;
+      margin-bottom: 54px;
+      margin-left: 30px;
+      > img {
+        cursor: pointer;
+      }
+    }
+    &__count {
+      top: 160px;
+      right: 112px;
+    }
+    &__cafes-number,
+    &__trucks-number {
+      font-size: 46px;
+      line-height: 53px;
+    }
+    &__cafes-text,
+    &__trucks-text {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__cafes-text {
+      margin-bottom: 30px;
+    }
+    &__cafes-number::after,
+    &__trucks-number::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+    }
+    &__cafes-number::after {
+      top: 0;
+      right: -15px;
+    }
+    &__trucks-number::after {
+      right: -15px;
+    }
+    background-image: url('../images/desktopHeaderpic3.png'), url('../images/desktopHeaderPic2.png'),
+      url('../images/desktopHeaderEllipse.png');
+    background-position-x: 882px, 594px, 475px;
+    background-position-y: 432px, 107px, 51px;
+    animation: icecream 3s ease-in 1 normal none;
+    @keyframes icecream {
+      0% {
+        background-position-x: 882px, 594px, 475px;
+        background-position-y: 432px, -1000px, 51px;
+      }
+      30% {
+        background-position-x: 882px, 594px, 475px;
+        background-position-y: 432px, 107px, 51px;
+      }
+      60% {
+        background-position-x: 882px, 594px, 475px;
+        background-position-y: 432px, 25px, 51px;
+      }
+      70% {
+        background-position-x: 882px, 594px, 475px;
+        background-position-y: 432px, 107px, 51px;
+      }
+
+      85% {
+        background-position-x: 882px, 594px, 475px;
+        background-position-y: 432px, 60px, 51px;
+      }
+
+      100% {
+        background-position-x: 882px, 594px, 475px;
+        background-position-y: 432px, 107px, 51px;
+      }
+    }
+  }
+}
+
+.header__trucks-number::before {
+  font: 400 28px $dekorationFont $headerFontColor;
+  color: $headerFontColor;
+  content: counter(count);
+  animation: counter1 3s linear normal forwards;
+  counter-reset: count 0;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  @include desktop {
+    top: 100px;
+  }
+}
+
+@keyframes counter1 {
+  4% {
+    counter-increment: count 0;
+  }
+  10% {
+    counter-increment: count 1;
+  }
+  13% {
+    counter-increment: count 2;
+  }
+  17% {
+    counter-increment: count 3;
+  }
+  21% {
+    counter-increment: count 4;
+  }
+  26% {
+    counter-increment: count 5;
+  }
+  30% {
+    counter-increment: count 6;
+  }
+  34% {
+    counter-increment: count 7;
+  }
+  38% {
+    counter-increment: count 8;
+  }
+  42% {
+    counter-increment: count 9;
+  }
+  47% {
+    counter-increment: count 10;
+  }
+  50% {
+    counter-increment: count 11;
+  }
+  53% {
+    counter-increment: count 12;
+  }
+  58% {
+    counter-increment: count 12;
+  }
+  62% {
+    counter-increment: count 14;
+  }
+  66% {
+    counter-increment: count 15;
+  }
+  70% {
+    counter-increment: count 16;
+  }
+  75% {
+    counter-increment: count 17;
+  }
+  79% {
+    counter-increment: count 18;
+  }
+  83% {
+    counter-increment: count 19;
+  }
+  87% {
+    counter-increment: count 20;
+  }
+  92% {
+    counter-increment: count 21;
+  }
+  96% {
+    counter-increment: count 22;
+  }
+  100% {
+    counter-increment: count 23;
+  }
+}
+.header__cafes-number::before {
+  font: 400 28px $dekorationFont $headerFontColor;
+  color: $headerFontColor;
+  content: counter(count);
+  animation: counter 2s linear normal forwards;
+  counter-reset: count 0;
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+
+@keyframes counter {
+  6% {
+    counter-increment: count 0;
+  }
+  13% {
+    counter-increment: count 1;
+  }
+  20% {
+    counter-increment: count 2;
+  }
+  27% {
+    counter-increment: count 3;
+  }
+  33% {
+    counter-increment: count 4;
+  }
+  39% {
+    counter-increment: count 5;
+  }
+  45% {
+    counter-increment: count 6;
+  }
+  51% {
+    counter-increment: count 7;
+  }
+  58% {
+    counter-increment: count 8;
+  }
+  64% {
+    counter-increment: count 9;
+  }
+  71% {
+    counter-increment: count 10;
+  }
+  75% {
+    counter-increment: count 11;
+  }
+  80% {
+    counter-increment: count 12;
+  }
+  85% {
+    counter-increment: count 12;
+  }
+  90% {
+    counter-increment: count 14;
+  }
+  95% {
+    counter-increment: count 15;
+  }
+  100% {
+    counter-increment: count 16;
+  }
+}
