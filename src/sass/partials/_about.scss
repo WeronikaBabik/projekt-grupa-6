@@ -1,0 +1,128 @@
+.about {
+  background-color: $footerBackground;
+  &__label {
+    font-family: $dekorationFont;
+    color: $headerSecondFontColor;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(21 / 18);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 125px 0 0 0;
+    @include tablet {
+      font-size: 26px;
+      line-height: calc(30 / 26);
+      padding-top: 130px;
+    }
+    @include desktop {
+      font-size: 30px;
+      line-height: calc(34 / 30);
+      letter-spacing: 0.04em;
+      padding-top: 125px;
+    }
+  }
+  &__header {
+    font-family: $dekorationFont;
+    color: $headerFontColor;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: calc(39 / 34);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 15px 61px 26px 59px;
+    @include tablet {
+      font-size: 48px;
+      line-height: calc(55 / 48);
+      padding-top: 16px;
+      padding-bottom: 50px;
+    }
+    @include desktop {
+      font-size: 58px;
+      line-height: calc(66 / 58);
+      letter-spacing: 0.06em;
+      padding-top: 15px;
+      padding-bottom: 102px;
+    }
+  }
+  &__main_container {
+    display: block;
+    background-image: url('../images/mobileAboutBG.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100%;
+    width: 100%;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/mobileAboutBG@2x.png');
+    }
+    @include tablet {
+      background-image: none;
+      display: flex;
+      align-items: end;
+    }
+    @include desktop {
+      align-items: center;
+      background-image: url('../images/desktopAboutBG.png');
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 100%;
+      width: 100%;
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/desktopAboutBG@2x.png');
+      }
+    }
+  }
+  &__image {
+    display: flex;
+    justify-content: center;
+    @include tablet {
+      padding-left: 39px;
+    }
+    @include desktop {
+      padding-left: 112px;
+    }
+  }
+  &__description_container {
+    padding: 46px 50px 0px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    @include tablet {
+      padding: 0 36px 0px 17px;
+      font-size: 14px;
+      line-height: 176%;
+    }
+    @include desktop {
+      padding: 0 117px 0px 74px;
+    }
+  }
+  &__description__1 {
+    @include desktop {
+      font-size: 16px;
+    }
+  }
+  &__description__2 {
+    padding: 31px 0 0 0;
+    color: $secondaryFontColor;
+    @include tablet {
+      letter-spacing: 0.04em;
+    }
+    @include desktop {
+      padding: 35px 0 0 0;
+      line-height: 194%;
+    }
+  }
+  &__button {
+    position: relative;
+    margin: 21px 0 0 50px;
+    @include tablet {
+      margin: 62px 0 0 396px;
+    }
+    @include desktop {
+      position: absolute;
+      margin: -60px 0 0 702px;
+    }
+  }
+}
