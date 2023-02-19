@@ -50,7 +50,7 @@
     @include tablet {
       gap: 20px;
       flex-direction: row;
-     flex-wrap: nowrap;
+      flex-wrap: nowrap;
     }
     @include desktop {
       gap: 29px;
