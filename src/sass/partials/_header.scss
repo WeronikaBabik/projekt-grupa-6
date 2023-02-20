@@ -62,12 +62,12 @@
   }
   &__bttn--how {
     width: 89px;
-    background-color: #fff;
+    background-color: $closeIcon;
   }
   &__head-link--1 {
     line-height: 10px;
     font-size: 8px;
-    color: #fff;
+    color: $closeIcon;
   }
   &__head-link--2 {
     line-height: 10px;
@@ -86,6 +86,10 @@
   background-position-x: 117px, 36px;
   background-position-y: 92px, 83px;
   animation: icecream 3s ease-in 1 normal none;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/mobileHeaderPic2@2x.png'),
+      url('../images/mobileHeaderEllipse@2x.png');
+  }
   @keyframes icecream {
     0% {
       background-position-x: 117px, 36px;
@@ -126,7 +130,7 @@
       gap: 22px;
       width: 159px;
       height: 44px;
-      background-color: #fff;
+      background-color: $closeIcon;
       border: none;
       border-radius: 22px;
       cursor: pointer;
@@ -165,7 +169,7 @@
       margin-top: 19px;
     }
     &__milk-text {
-      color: #fff;
+      color: $closeIcon;
       font-weight: 400;
       font-size: 8px;
       line-height: 150%;
@@ -203,7 +207,7 @@
       font-size: 8px;
       margin: 0;
       text-align: right;
-      color: #fff;
+      color: $closeIcon;
     }
     &__cafes-text {
       margin-bottom: 20px;
@@ -215,7 +219,7 @@
       width: 16px;
       height: 16px;
       border-radius: 50%;
-      background: #ffffff;
+      background: $closeIcon;
       z-index: -1;
     }
     &__cafes-number::after {
@@ -232,6 +236,10 @@
     background-position-x: 568px, 378px, 307px;
     background-position-y: 270px, 63px, 31px;
     animation: icecream 3s ease-in 1 normal none;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('/src/images/tabletHeaderPic3@2x.png'),
+        url('/src/images/tabletHeaderPic2@2x.png'), url('/src/images/tabletHeaderEllipse@2x.png');
+    }
     @keyframes icecream {
       0% {
         background-position-x: 568px, 378px, 307px;
@@ -281,7 +289,7 @@
       font-weight: 600;
       font-size: 16px;
       line-height: 21px;
-      color: #fff;
+      color: $closeIcon;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       &:hover {
         color: $headerFontColor;
@@ -368,6 +376,10 @@
     background-position-x: 882px, 594px, 475px;
     background-position-y: 432px, 107px, 51px;
     animation: icecream 3s ease-in 1 normal none;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('/src/images/desktopHeaderPic3@2x.png'),
+        url('/src/images/desktopHeaderPic2@2x.png'), url('/src/images/desktopHeaderEllipse@2x.png');
+    }
     @keyframes icecream {
       0% {
         background-position-x: 882px, 594px, 475px;
