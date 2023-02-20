@@ -86,6 +86,10 @@
   background-position-x: 117px, 36px;
   background-position-y: 92px, 83px;
   animation: icecream 3s ease-in 1 normal none;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/mobileHeaderPic2@2x.png'),
+      url('../images/mobileHeaderEllipse@2x.png');
+  }
   @keyframes icecream {
     0% {
       background-position-x: 117px, 36px;
@@ -232,6 +236,10 @@
     background-position-x: 568px, 378px, 307px;
     background-position-y: 270px, 63px, 31px;
     animation: icecream 3s ease-in 1 normal none;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('/src/images/tabletHeaderPic3@2x.png'),
+        url('/src/images/tabletHeaderPic2@2x.png'), url('/src/images/tabletHeaderEllipse@2x.png');
+    }
     @keyframes icecream {
       0% {
         background-position-x: 568px, 378px, 307px;
@@ -368,6 +376,10 @@
     background-position-x: 882px, 594px, 475px;
     background-position-y: 432px, 107px, 51px;
     animation: icecream 3s ease-in 1 normal none;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('/src/images/desktopHeaderPic3@2x.png'),
+        url('/src/images/desktopHeaderPic2@2x.png'), url('/src/images/desktopHeaderEllipse@2x.png');
+    }
     @keyframes icecream {
       0% {
         background-position-x: 882px, 594px, 475px;
