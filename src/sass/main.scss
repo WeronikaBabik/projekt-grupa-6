@@ -4,6 +4,9 @@
  */
 @use './utils/mixins' as *;
 @import './utils/variables';
+@import './partials/header';
+@import './partials/product';
+@import './partials/about';
 @import './partials/advantages';
 @import './partials/reviews';
 @import './partials/footer';
