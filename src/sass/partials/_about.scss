@@ -186,7 +186,7 @@
   }
   &__review {
     color: #000;
-    font-family: 'DM Sans', sans-serif;
+    font-family: $mainFont;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -206,7 +206,7 @@
     }
   }
   &__description {
-    font-family: 'DM Sans', sans-serif;
+    font-family: $mainFont;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;

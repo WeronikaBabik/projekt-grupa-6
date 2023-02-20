@@ -62,12 +62,12 @@
   }
   &__bttn--how {
     width: 89px;
-    background-color: #fff;
+    background-color: $closeIcon;
   }
   &__head-link--1 {
     line-height: 10px;
     font-size: 8px;
-    color: #fff;
+    color: $closeIcon;
   }
   &__head-link--2 {
     line-height: 10px;
@@ -126,7 +126,7 @@
       gap: 22px;
       width: 159px;
       height: 44px;
-      background-color: #fff;
+      background-color: $closeIcon;
       border: none;
       border-radius: 22px;
       cursor: pointer;
@@ -165,7 +165,7 @@
       margin-top: 19px;
     }
     &__milk-text {
-      color: #fff;
+      color: $closeIcon;
       font-weight: 400;
       font-size: 8px;
       line-height: 150%;
@@ -203,7 +203,7 @@
       font-size: 8px;
       margin: 0;
       text-align: right;
-      color: #fff;
+      color: $closeIcon;
     }
     &__cafes-text {
       margin-bottom: 20px;
@@ -215,7 +215,7 @@
       width: 16px;
       height: 16px;
       border-radius: 50%;
-      background: #ffffff;
+      background: $closeIcon;
       z-index: -1;
     }
     &__cafes-number::after {
@@ -281,7 +281,7 @@
       font-weight: 600;
       font-size: 16px;
       line-height: 21px;
-      color: #fff;
+      color: $closeIcon;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       &:hover {
         color: $headerFontColor;
