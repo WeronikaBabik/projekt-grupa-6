@@ -4,11 +4,8 @@
  */
 @use './utils/mixins' as *;
 @import './utils/variables';
-<<<<<<< HEAD
-@import './partials/contacts';
-=======
 @import './partials/product';
 @import './partials/about';
 @import './partials/advantages';
 @import './partials/reviews';
->>>>>>> 710d685c668a033fb7f1ced3580021ce2b42c089
+@import './partials/contacts';
