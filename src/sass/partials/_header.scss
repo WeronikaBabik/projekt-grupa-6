@@ -89,6 +89,7 @@
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/mobileHeaderPic2@2x.png'),
       url('../images/mobileHeaderEllipse@2x.png');
+    background-size: 171px 410px, 346px 344px;
   }
   @keyframes icecream {
     0% {
@@ -234,6 +235,7 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('/src/images/tabletHeaderPic3@2x.png'),
         url('/src/images/tabletHeaderPic2@2x.png'), url('/src/images/tabletHeaderEllipse@2x.png');
+      background-size: 168px 133px, 143px 336px, 324px 322px;
     }
     @keyframes icecream {
       0% {
@@ -374,6 +376,7 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('/src/images/desktopHeaderPic3@2x.png'),
         url('/src/images/desktopHeaderPic2@2x.png'), url('/src/images/desktopHeaderEllipse@2x.png');
+      background-size: 293px 232px, 236px 557px, 538px 538px;
     }
     @keyframes icecream {
       0% {
