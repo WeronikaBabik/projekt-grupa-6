@@ -95,7 +95,7 @@
       line-height: 21.28px;
       font-weight: 700;
       padding-left: 5px;
-      
+
       @include tablet {
         width: 768px;
         margin: 29px 0 18px 0;
@@ -110,7 +110,7 @@
 
   &__contacts {
     justify-content: end;
-    
+
     @include desktop {
       margin-right: 101px;
     }
