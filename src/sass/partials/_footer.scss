@@ -1,6 +1,5 @@
 .container {
   display: flex;
-  background-color: $footerBackground;
   flex-direction: column;
   width: 100%;
   padding: 113px 20px 0 0;
@@ -24,7 +23,7 @@
   letter-spacing: 0.03em;
   min-width: 320px;
   justify-content: center;
-
+  background-color: $footerBackground;
   @include tablet {
     min-width: 768px;
     text-align: left;
