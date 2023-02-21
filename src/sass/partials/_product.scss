@@ -1,6 +1,6 @@
 .product {
-  padding: 121px 20px 98px 20px;
-  margin: 0 auto;
+  padding: 121px 0 98px 0;
+  /*margin: 0 auto;*/
   list-style: none;
   text-decoration: none;
   &__title {
@@ -50,7 +50,7 @@
     @include tablet {
       gap: 20px;
       flex-direction: row;
-     flex-wrap: nowrap;
+      flex-wrap: nowrap;
     }
     @include desktop {
       gap: 29px;

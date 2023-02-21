@@ -1,0 +1,179 @@
+.container {
+  display: flex;
+  background-color: $footerBackground;
+  flex-direction: column;
+  width: 100%;
+  padding: 113px 20px 0 0;
+
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    max-width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.footer {
+  display: flex;
+  letter-spacing: 0.03em;
+  min-width: 320px;
+
+  @include tablet {
+    min-width: 768px;
+    text-align: left;
+  }
+  @include desktop {
+    min-width: 1200px;
+    text-align: left;
+  }
+
+  &__title {
+    font-family: $dekorationFont;
+    flex-direction: column;
+    padding-left: 20px;
+    width: 230px;
+    @include tablet {
+      width: 340px;
+      padding-right: 0px;
+      margin-right: 80px;
+    }
+
+    @include desktop {
+      width: 480px;
+      padding-left: 0px;
+      margin-left: 114px;
+    }
+
+    &-what {
+      font-size: 18px;
+      color: $headerSecondFontColor;
+      margin: 0px;
+
+      @include tablet {
+        font-size: 26px;
+      }
+      @include desktop {
+        letter-spacing: 0.04em;
+        font-size: 30px;
+      }
+    }
+
+    &-how {
+      font-size: 34px;
+      color: $headerFontColor;
+      margin-top: 18px;
+      margin-bottom: 43px;
+
+      @include tablet {
+        font-size: 48px;
+        margin-top: 16px;
+        margin-bottom: 91px;
+      }
+      @include desktop {
+        letter-spacing: 0.06em;
+        font-size: 58px;
+        margin-top: 15px;
+        margin-bottom: 97px;
+      }
+    }
+  }
+
+  &__rights {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #e1e1e1;
+    &-txt {
+      text-align: center;
+      font-size: 14px;
+      color: $secondaryFontColor;
+      margin: 22px 0 25px 59px;
+      line-height: 21.28px;
+      font-weight: 700;
+      padding-left: 5px;
+
+      @include tablet {
+        width: 768px;
+        margin: 29px 0 18px 0;
+      }
+
+      @include desktop {
+        min-width: 1280px;
+        margin: 9px 0 10px 0;
+      }
+    }
+  }
+
+  &__contacts {
+    justify-content: end;
+
+    @include desktop {
+      margin-right: 101px;
+    }
+
+    &-item {
+      display: flex;
+      margin-left: 28px;
+      margin-bottom: 30px;
+      border-radius: 50%;
+      background-color: $links;
+      padding: 6px 6px;
+
+      @include tablet {
+        margin-bottom: 46px;
+      }
+
+      @include desktop {
+        margin-bottom: 50px;
+        padding: 7px 7px;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $hoverFocusLinks;
+        border-radius: 50%;
+        outline: none;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+
+    &-icon {
+      fill: $closeIcon;
+      cursor: pointer;
+    }
+
+    &-media {
+      display: flex;
+      justify-content: end;
+
+      @include tablet {
+        margin: 0px;
+      }
+    }
+
+    &-phone {
+      font-weight: 700;
+      font-size: 12px;
+      text-align: right;
+      line-height: 22.32px;
+      letter-spacing: 0;
+      margin-bottom: 43px;
+
+      @include desktop {
+        font-size: 16px;
+        padding-left: 0px;
+        max-width: 320px;
+        letter-spacing: 0.02em;
+      }
+    }
+  }
+  &__contact-item {
+    color: $headerFontColor;
+    cursor: pointer;
+  }
+}

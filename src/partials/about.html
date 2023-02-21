@@ -5,14 +5,14 @@
     <div class="about__image">
       <picture>
         <source
-          media="screen and (max-width: 767px)"
-          srcset="./images/mobileAboutPic1.png, ./images/mobileAboutPic1@2x.png 2x"
+          media="screen and (min-width: 1280px)"
+          srcset="./images/desktopAboutPic1.png, ./images/desktopAboutPic1@2x.png 2x"
         />
         <source
-          media="screen and (max-width: 1279px)"
+          media="screen and (min-width: 768px)"
           srcset="./images/tabletAboutPic1.png, ./images/tabletAboutPic1@2x.png 2x"
         />
-        <source srcset="./images/desktopAboutPic1.png, ./images/desktopAboutPic1@2x.png 2x" />
+        <source srcset="./images/mobileAboutPic1.png, ./images/mobileAboutPic1@2x.png 2x" />
         <img src="./images/mobileAboutPic1.png" alt="zdjęcie krowy" />
       </picture>
     </div>
@@ -30,5 +30,5 @@
       </p>
     </div>
   </div>
-  <button class="about__button">button</button>
+  <button class="about__button" type="button">Read more</button>
 </section>

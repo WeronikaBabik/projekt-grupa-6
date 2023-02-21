@@ -4,8 +4,14 @@
  */
 @use './utils/mixins' as *;
 @import './utils/variables';
+@import './partials/header';
 @import './partials/product';
 @import './partials/about';
 @import './partials/advantages';
 @import './partials/reviews';
+<<<<<<< HEAD
 @import './partials/contacts';
+=======
+@import './partials/footer';
+@import './partials/modal-menu';
+>>>>>>> 1344d6cf6b9dab14ac1336781b4447da72372977
