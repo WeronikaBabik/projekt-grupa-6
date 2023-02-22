@@ -1,5 +1,28 @@
 .about {
   background-color: $footerBackground;
+  background-image: url('../images/mobileAboutBG.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/mobileAboutBG@2x.png');
+  }
+  @include tablet {
+    background-image: none;
+    display: flex;
+    align-items: end;
+  }
+  @include desktop {
+    align-items: center;
+    background-image: url('../images/desktopAboutBG.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    width: 100%;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/desktopAboutBG@2x.png');
+    }
+  }
   &__label {
     font-family: $dekorationFont;
     color: $headerSecondFontColor;
@@ -49,14 +72,7 @@
   }
   &__main_container {
     display: block;
-    background-image: url('../images/mobileAboutBG.png');
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 100%;
     width: 100%;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/mobileAboutBG@2x.png');
-    }
     @include tablet {
       background-image: none;
       display: flex;
@@ -64,14 +80,7 @@
     }
     @include desktop {
       align-items: center;
-      background-image: url('../images/desktopAboutBG.png');
-      background-repeat: no-repeat;
-      background-position: center top;
-      background-size: 100%;
       width: 100%;
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url('../images/desktopAboutBG@2x.png');
-      }
     }
   }
   &__image {
