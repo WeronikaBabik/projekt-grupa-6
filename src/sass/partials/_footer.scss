@@ -94,6 +94,7 @@
     display: flex;
     justify-content: center;
     &-txt {
+      width: 150px;
       text-align: center;
       font-size: 14px;
       color: $secondaryFontColor;
