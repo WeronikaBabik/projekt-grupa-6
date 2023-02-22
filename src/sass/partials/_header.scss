@@ -1,10 +1,4 @@
 .header {
-  z-index: 1;
-  width: 100%;
-  height: 502px;
-  background-color: $headerBackdround;
-  padding: 6px 20px 0 20px;
-  position: relative;
   &__menu {
     display: flex;
     justify-content: space-between;
@@ -80,49 +74,57 @@
     display: none;
   }
 
-  background-image: url('../images/mobileHeaderPic2.png'), url('../images/mobileHeaderEllipse.png');
-  background-repeat: no-repeat;
-  background-position-x: 117px, 36px;
-  background-position-y: 92px, 83px;
-  animation: icecream 3s ease-in 1 normal none;
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url('../images/mobileHeaderPic2@2x.png'),
-      url('../images/mobileHeaderEllipse@2x.png');
-    background-size: 171px 410px, 346px 344px;
-  }
-  @keyframes icecream {
-    0% {
-      background-position-x: 117px, 36px;
-      background-position-y: -100px, 83px;
-    }
-    30% {
-      background-position-x: 117px, 36px;
-      background-position-y: 92px, 83px;
-    }
-    60% {
-      background-position-x: 117px, 36px;
-      background-position-y: 20px, 83px;
-    }
-    70% {
-      background-position-x: 117px, 36px;
-      background-position-y: 92px, 83px;
-    }
+  width: 100%;
 
-    85% {
-      background-position-x: 117px, 36px;
-      background-position-y: 40px, 83px;
+  background-color: $headerBackdround;
+  &__container {
+    z-index: 1;
+    height: 502px;
+    background-repeat: no-repeat;
+    padding: 6px 20px 0 20px;
+    position: relative;
+    background-image: url('../images/mobileHeaderPic2.png'),
+      url('../images/mobileHeaderEllipse.png');
+    background-repeat: no-repeat;
+    background-position-x: 117px, 36px;
+    background-position-y: 92px, 83px;
+    animation: icecream 3s ease-in 1 normal none;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/mobileHeaderPic2@2x.png'),
+        url('../images/mobileHeaderEllipse@2x.png');
+      background-size: 171px 410px, 346px 344px;
     }
+    @keyframes icecream {
+      0% {
+        background-position-x: 117px, 36px;
+        background-position-y: -100px, 83px;
+      }
+      30% {
+        background-position-x: 117px, 36px;
+        background-position-y: 92px, 83px;
+      }
+      60% {
+        background-position-x: 117px, 36px;
+        background-position-y: 20px, 83px;
+      }
+      70% {
+        background-position-x: 117px, 36px;
+        background-position-y: 92px, 83px;
+      }
 
-    100% {
-      background-position-x: 117px, 36px;
-      background-position-y: 92px, 83px;
+      85% {
+        background-position-x: 117px, 36px;
+        background-position-y: 40px, 83px;
+      }
+
+      100% {
+        background-position-x: 117px, 36px;
+        background-position-y: 92px, 83px;
+      }
     }
   }
 
   @include tablet {
-    padding-top: 38px;
-    padding-left: 34px;
-    padding-right: 34px;
     &__btn-buynow {
       display: flex;
       align-items: center;
@@ -224,50 +226,54 @@
     &__trucks-number::after {
       right: -9px;
     }
+    &__container {
+      padding-top: 38px;
+      padding-left: 34px;
+      padding-right: 34px;
+      height: 399px;
+      background-image: url('/src/images/tabletHeaderpic3.png'),
+        url('/src/images/tabletHeaderPic2.png'), url('/src/images/tabletHeaderEllipse.png');
+      background-position-x: 568px, 378px, 307px;
+      background-position-y: 270px, 63px, 31px;
+      animation: icecream 3s ease-in 1 normal none;
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('/src/images/tabletHeaderPic3@2x.png'),
+          url('/src/images/tabletHeaderPic2@2x.png'), url('/src/images/tabletHeaderEllipse@2x.png');
+        background-size: 168px 133px, 143px 336px, 324px 322px;
+      }
+      @keyframes icecream {
+        0% {
+          background-position-x: 568px, 378px, 307px;
+          background-position-y: 270px, -1000px, 31px;
+        }
+        30% {
+          background-position-x: 568px, 378px, 307px;
+          background-position-y: 270px, 63px, 31px;
+        }
+        60% {
+          background-position-x: 568px, 378px, 307px;
+          background-position-y: 270px, 20px, 31px;
+        }
+        70% {
+          background-position-x: 568px, 378px, 307px;
+          background-position-y: 270px, 63px, 31px;
+        }
 
-    height: 399px;
-    background-image: url('/src/images/tabletHeaderpic3.png'),
-      url('/src/images/tabletHeaderPic2.png'), url('/src/images/tabletHeaderEllipse.png');
-    background-position-x: 568px, 378px, 307px;
-    background-position-y: 270px, 63px, 31px;
-    animation: icecream 3s ease-in 1 normal none;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('/src/images/tabletHeaderPic3@2x.png'),
-        url('/src/images/tabletHeaderPic2@2x.png'), url('/src/images/tabletHeaderEllipse@2x.png');
-      background-size: 168px 133px, 143px 336px, 324px 322px;
-    }
-    @keyframes icecream {
-      0% {
-        background-position-x: 568px, 378px, 307px;
-        background-position-y: 270px, -1000px, 31px;
-      }
-      30% {
-        background-position-x: 568px, 378px, 307px;
-        background-position-y: 270px, 63px, 31px;
-      }
-      60% {
-        background-position-x: 568px, 378px, 307px;
-        background-position-y: 270px, 20px, 31px;
-      }
-      70% {
-        background-position-x: 568px, 378px, 307px;
-        background-position-y: 270px, 63px, 31px;
-      }
+        85% {
+          background-position-x: 568px, 378px, 307px;
+          background-position-y: 270px, 43px, 31px;
+        }
 
-      85% {
-        background-position-x: 568px, 378px, 307px;
-        background-position-y: 270px, 43px, 31px;
-      }
-
-      100% {
-        background-position-x: 568px, 378px, 307px;
-        background-position-y: 270px, 63px, 31px;
+        100% {
+          background-position-x: 568px, 378px, 307px;
+          background-position-y: 270px, 63px, 31px;
+        }
       }
     }
   }
 
   @include desktop {
-    padding: 38px 115px 0 46px;
+    padding: 0;
     height: 665px;
     &__logo {
       margin-right: 0;
@@ -367,42 +373,47 @@
     &__trucks-number::after {
       right: -15px;
     }
-    background-image: url('/src/images/desktopHeaderPic3.png'),
-      url('/src/images/desktopHeaderPic2.png'), url('/src/images/desktopHeaderEllipse.png');
-    background-position-x: 882px, 594px, 475px;
-    background-position-y: 432px, 107px, 51px;
-    animation: icecream 3s ease-in 1 normal none;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('/src/images/desktopHeaderPic3@2x.png'),
-        url('/src/images/desktopHeaderPic2@2x.png'), url('/src/images/desktopHeaderEllipse@2x.png');
-      background-size: 293px 232px, 236px 557px, 538px 538px;
-    }
-    @keyframes icecream {
-      0% {
-        background-position-x: 882px, 594px, 475px;
-        background-position-y: 432px, -1000px, 51px;
+    .header__container {
+      padding: 38px 115px 0 46px;
+      height: 665px;
+      background-image: url('/src/images/desktopHeaderPic3.png'),
+        url('/src/images/desktopHeaderPic2.png'), url('/src/images/desktopHeaderEllipse.png');
+      background-position-x: 882px, 594px, 475px;
+      background-position-y: 432px, 107px, 51px;
+      animation: icecream 3s ease-in 1 normal none;
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('/src/images/desktopHeaderPic3@2x.png'),
+          url('/src/images/desktopHeaderPic2@2x.png'),
+          url('/src/images/desktopHeaderEllipse@2x.png');
+        background-size: 293px 232px, 236px 557px, 538px 538px;
       }
-      30% {
-        background-position-x: 882px, 594px, 475px;
-        background-position-y: 432px, 107px, 51px;
-      }
-      60% {
-        background-position-x: 882px, 594px, 475px;
-        background-position-y: 432px, 25px, 51px;
-      }
-      70% {
-        background-position-x: 882px, 594px, 475px;
-        background-position-y: 432px, 107px, 51px;
-      }
+      @keyframes icecream {
+        0% {
+          background-position-x: 882px, 594px, 475px;
+          background-position-y: 432px, -1000px, 51px;
+        }
+        30% {
+          background-position-x: 882px, 594px, 475px;
+          background-position-y: 432px, 107px, 51px;
+        }
+        60% {
+          background-position-x: 882px, 594px, 475px;
+          background-position-y: 432px, 25px, 51px;
+        }
+        70% {
+          background-position-x: 882px, 594px, 475px;
+          background-position-y: 432px, 107px, 51px;
+        }
 
-      85% {
-        background-position-x: 882px, 594px, 475px;
-        background-position-y: 432px, 60px, 51px;
-      }
+        85% {
+          background-position-x: 882px, 594px, 475px;
+          background-position-y: 432px, 60px, 51px;
+        }
 
-      100% {
-        background-position-x: 882px, 594px, 475px;
-        background-position-y: 432px, 107px, 51px;
+        100% {
+          background-position-x: 882px, 594px, 475px;
+          background-position-y: 432px, 107px, 51px;
+        }
       }
     }
   }
@@ -558,5 +569,14 @@
   }
   100% {
     counter-increment: count 16;
+  }
+}
+/*header-container*/
+.header__container {
+  @include desktop {
+    max-width: 1280px;
+    position: relative;
+
+    margin: 0 auto;
   }
 }

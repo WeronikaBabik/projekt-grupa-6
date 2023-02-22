@@ -121,6 +121,7 @@
   align-items: center;
   gap: 10px;
   padding-top: 54px;
+
   @include tablet {
     display: flex;
     flex-direction: row;
@@ -153,6 +154,13 @@
   cursor: pointer;
   border-style: none;
   color: $mainFontColor;
+  transition: border-radius 250ms;
+  &:hover {
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
 }
 .contacts__titlewhite {
   font-family: DM Sans;
@@ -168,4 +176,11 @@
   cursor: pointer;
   border-style: none;
   color: $headerFontColor;
+  transition: border-radius 250ms;
+  &:hover {
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
 }
