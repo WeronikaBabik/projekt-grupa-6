@@ -227,6 +227,8 @@
       right: -9px;
     }
     &__container {
+      max-width: 768px;
+      margin: 0 auto;
       padding-top: 38px;
       padding-left: 34px;
       padding-right: 34px;
