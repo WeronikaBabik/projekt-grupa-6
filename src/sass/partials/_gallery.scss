@@ -1,9 +1,8 @@
 .gallery {
-  margin: auto;
   padding-top: 97px;
   padding-bottom: 80px;
   background: linear-gradient(to bottom, #fff5f6 50%, #fff 50%);
-     
+
   @include tablet {
     padding-top: 140px;
     padding-bottom: 121px;
@@ -14,36 +13,35 @@
     padding-top: 139px;
     padding-bottom: 123px;
     background: linear-gradient(to bottom, #fff5f6 45%, #fff 45%);
-    }
+  }
   &__image {
-  display: flex;
-  justify-content: center;
-  width: 364px;
-  height: 122px;
-  margin: auto;
-  cursor: pointer;
-  -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-          transition: all 0.5s ease;
-  &:hover {
-  border-radius: 50%;
-  -webkit-transform: rotate(360deg);
-     -moz-transform: rotate(360deg);
-       -o-transform: rotate(360deg);
+    display: flex;
+    justify-content: center;
+    width: 364px;
+    height: 122px;
+    margin: auto;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    &:hover {
+      border-radius: 50%;
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
       -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
-          }
-    
-  @include tablet {
-    width: 786px;
-    height: 264px;
+      transform: rotate(360deg);
+    }
+
+    @include tablet {
+      width: 786px;
+      height: 264px;
+    }
+    @include desktop {
+      width: 1280px;
+      height: 430px;
+    }
   }
-  @include desktop {
-    width: 1280px;
-    height: 430px;
-  
-  }
-}
 }
