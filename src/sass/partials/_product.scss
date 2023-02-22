@@ -66,6 +66,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
     @include tablet {
       max-width: 220px;
       width: 100%;
@@ -252,7 +254,33 @@
 .arrow-btn:hover,
 .arrow-btn:focus {
   cursor: pointer;
+  transform: scale(0.9);
 }
+@keyframes animate125 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.product__grid-second:hover::before {
+  animation: animate125 3000ms 1 200ms;
+}
+.product__grid-first:hover::before {
+  animation: animate125 3000ms 1 200ms;
+}
+.product__grid-third:hover::before {
+  animation: animate125 3000ms 1 200ms;
+}
+
+
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .product {
     &__grid-first::before {
