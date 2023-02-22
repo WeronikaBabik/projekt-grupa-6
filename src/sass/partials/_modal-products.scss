@@ -1,0 +1,103 @@
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 184, 202, 0.5) 10%,
+    rgba(240, 209, 165, 0.5) 50%,
+    rgba(194, 226, 151, 0.5) 100%
+  );
+  z-index: 20;
+  transition: 0.3s all;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: $iceCream;
+  transition: 0.3s all;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: initial;
+  max-width: 280px;
+  width: 100vw;
+  padding: 35px 5px;
+  transform: translate(-50%, -50%);
+  background-color: $iceCream;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
+  text-align: center;
+  z-index: 30;
+  @include tablet {
+    max-width: 220px;
+    width: 100%;
+  }
+  @include desktop {
+    max-width: 329px;
+  }
+  &__second {
+    background-color: $iceCoffe;
+  }
+  &__third {
+    background-color: $milkshake;
+  }
+  &__close {
+    background: none;
+    border-style: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color:$closeIcon;
+  }
+  &__description {
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 14;
+    line-height: 1.52;
+    text-align: center;
+    color: $secondaryBtnColor;
+    margin: 0 auto;
+    padding: 20px;
+    @include desktop {
+      font-size: 16;
+      line-height: 1.76;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  &__name{
+    font-family: $mainFont;
+    font-size: 20;
+    line-height: 1.15;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.04rem;
+    text-transform: uppercase;
+    color: $secondaryBtnColor;
+  }
+  &__title{
+    font-family: $dekorationFont;
+    font-size: 20;
+    line-height: 1.15;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.04rem;
+    text-transform: uppercase;
+    color: $secondaryBtnColor;
+  }
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
