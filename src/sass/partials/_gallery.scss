@@ -17,7 +17,7 @@
   &__image {
     display: flex;
     justify-content: center;
-    width: 364px;
+    /*width: 364px;*/
     height: 122px;
     margin: auto;
     cursor: pointer;
@@ -36,11 +36,11 @@
     }
 
     @include tablet {
-      width: 786px;
+      /*width: 786px;*/
       height: 264px;
     }
     @include desktop {
-      width: 1280px;
+      /*width: 1280px;*/
       height: 430px;
     }
   }

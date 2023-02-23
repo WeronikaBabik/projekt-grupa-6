@@ -1,7 +1,7 @@
 .contacts {
   padding: 86px 50px;
   background-color: $footerBackground;
-  background-image: linear-gradient(to bottom, $secondaryBtnColor 150px, $footerBackground 40px);
+  background-image: linear-gradient(to bottom, $secondaryBtnColor 210px, $footerBackground 40px);
   @include tablet {
     padding: 119px 36px;
   }
@@ -25,12 +25,16 @@
   }
 }
 .contacts__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
+  min-height: 572px;
   border-radius: 24px;
   border: 1px rgba(225, 225, 225, 1);
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
   background-color: $mainFontColor;
-  padding: 43px 20px;
+  padding: 51px 43px 62px 43px;
   margin-bottom: 20px;
   &:hover {
     box-shadow: 0px 8px 30px rgb(240, 209, 165);
@@ -39,82 +43,78 @@
     box-shadow: 0px 8px 30px rgb(194, 226, 151);
   }
 }
-  
-  .contacts__cafe {
-    border-radius: 4px;
-    margin: 0;
-    width: 80px;
-    text-align: center;
-    background: $iceCoffe;
-    color: $mainFontColor;
-    font-family: DM Sans;
-    
-  }
-  .contacts__foodtrack {
-    background-color: $milkshake;
-    width: 130px;
-    padding-left: 20px;
-    border-radius: 4px;
-    color: $mainFontColor;
-    margin: 0;
-    
-  }
 
-  .contacts__places {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0.04em;
-    text-align: left;
-    font-family: DM Sans;
-    padding: 0;
-  }
-  .contacts__day {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-    font-family: DM Sans;
-    padding: 0;
-  }
-  .contacts__clock {
-    color: $headerSecondFontColor;
-    font-style: normal;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-    font-family: DM Sans;
-  }
-  .contacts__text {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: $secondaryFontColor;
-    font-family: DM Sans;
-    padding-top: 10px;
-  }
-  .contacts__contact {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    color: $secondaryFontColor;
-    padding: 0;
-  }
-  .contacts__line {
-    width: 100%;
-    height: 1px;
-    background-color: #e1e1e1;
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
+.contacts__cafe {
+  border-radius: 4px;
+  margin: 0;
+  width: 80px;
+  text-align: center;
+  background: $iceCoffe;
+  color: $mainFontColor;
+  font-family: DM Sans;
+}
+.contacts__foodtrack {
+  background-color: $milkshake;
+  width: 130px;
+  padding-left: 20px;
+  border-radius: 4px;
+  color: $mainFontColor;
+  margin: 0;
+}
 
-
+.contacts__places {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  font-family: DM Sans;
+  padding: 0;
+}
+.contacts__day {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: DM Sans;
+  padding: 0;
+}
+.contacts__clock {
+  color: $headerSecondFontColor;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: DM Sans;
+}
+.contacts__text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $secondaryFontColor;
+  font-family: DM Sans;
+  padding-top: 10px;
+}
+.contacts__contact {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: $secondaryFontColor;
+  padding: 0;
+}
+.contacts__line {
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e1;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
 .contacts__button {
   display: flex;
   flex-direction: column;
@@ -139,7 +139,6 @@
     padding-top: 86px;
   }
 }
-
 .contacts__titlered {
   font-family: DM Sans;
   font-size: 16px;
