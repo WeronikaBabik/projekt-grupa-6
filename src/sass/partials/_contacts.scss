@@ -1,185 +1,191 @@
 .contacts {
   padding: 86px 50px;
   background-color: $footerBackground;
-  background-image: linear-gradient(to bottom, $secondaryBtnColor 210px, $footerBackground 40px);
+  background-image: linear-gradient(to bottom, $secondaryBtnColor 240px, $footerBackground 40px);
   @include tablet {
     padding: 119px 36px;
   }
   @include desktop {
     padding: 132px 115px;
   }
-}
-.contacts__list {
-  display: flex;
-  flex-direction: column;
-
-  @include tablet {
+  &__list {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    flex-direction: column;
+
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      gap: 31px;
+    }
   }
-  @include desktop {
+  &__container {
     display: flex;
-    flex-direction: row;
-    gap: 31px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    width: 100%;
+    min-height: 572px;
+    border-radius: 24px;
+    border: 1px rgba(225, 225, 225, 1);
+    box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+    background-color: $mainFontColor;
+    padding: 51px 43px 62px 43px;
+    margin-bottom: 20px;
+    &:hover {
+      box-shadow: 0px 8px 30px rgb(240, 209, 165);
+    }
+    &:nth-child(2):hover {
+      box-shadow: 0px 8px 30px rgb(194, 226, 151);
+    }
   }
-}
-.contacts__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  min-height: 572px;
-  border-radius: 24px;
-  border: 1px rgba(225, 225, 225, 1);
-  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
-  background-color: $mainFontColor;
-  padding: 51px 43px 62px 43px;
-  margin-bottom: 20px;
-  &:hover {
-    box-shadow: 0px 8px 30px rgb(240, 209, 165);
+  &__cafe {
+    border-radius: 4px;
+    margin: 0;
+    width: 80px;
+    text-align: center;
+    background: $iceCoffe;
+    color: $mainFontColor;
+    font-family: DM Sans;
   }
-  &:nth-child(2):hover {
-    box-shadow: 0px 8px 30px rgb(194, 226, 151);
+  &__foodtrack {
+    background-color: $milkshake;
+    width: 130px;
+    padding-left: 20px;
+    border-radius: 4px;
+    color: $mainFontColor;
+    margin: 0;
   }
-}
-
-.contacts__cafe {
-  border-radius: 4px;
-  margin: 0;
-  width: 80px;
-  text-align: center;
-  background: $iceCoffe;
-  color: $mainFontColor;
-  font-family: DM Sans;
-}
-.contacts__foodtrack {
-  background-color: $milkshake;
-  width: 130px;
-  padding-left: 20px;
-  border-radius: 4px;
-  color: $mainFontColor;
-  margin: 0;
-}
-
-.contacts__places {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: 0.04em;
-  text-align: left;
-  font-family: DM Sans;
-  padding: 0;
-}
-.contacts__day {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
-  font-family: DM Sans;
-  padding: 0;
-}
-.contacts__clock {
-  color: $headerSecondFontColor;
-  font-style: normal;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
-  font-family: DM Sans;
-}
-.contacts__text {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 18px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: $secondaryFontColor;
-  font-family: DM Sans;
-  padding-top: 10px;
-}
-.contacts__contact {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 18px;
-  color: $secondaryFontColor;
-  padding: 0;
-}
-.contacts__line {
-  width: 100%;
-  height: 1px;
-  background-color: #e1e1e1;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-.contacts__button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding-top: 54px;
-
-  @include tablet {
+  &__places {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    font-family: DM Sans;
+    padding-bottom: 10px;
+    margin: 0;
+    color: #000000;
+    & p {
+      margin: 0;
+    }
+  }
+  &__day {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: DM Sans;
+    padding: 0;
+    margin: 0;
+    &--padding {
+      padding-top: 15px;
+    }
+  }
+  &__clock {
+    color: $headerSecondFontColor;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: DM Sans;
+  }
+  &__text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $secondaryFontColor;
+    font-family: DM Sans;
+    padding: 0;
+    margin: 0;
+  }
+  &__contact a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: $secondaryFontColor;
+    padding: 0;
+  }
+  &__line {
+    width: 100%;
+    height: 1px;
+    background-color: #e1e1e1;
+  }
+  &__button {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 15px;
-    padding-top: 81px;
+    gap: 10px;
+    padding-top: 54px;
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding-top: 81px;
+    }
+    @include desktop {
+      gap: 15px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding-top: 86px;
+    }
   }
-  @include desktop {
-    gap: 15px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding-top: 86px;
+  &__titlered {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: $mainBtnColor;
+    border-radius: 22px;
+    height: 44px;
+    width: 161px;
+    cursor: pointer;
+    border-style: none;
+    color: $mainFontColor;
+    transition: border-radius 250ms;
+    &:hover {
+      border-bottom-right-radius: 50px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
   }
-}
-.contacts__titlered {
-  font-family: DM Sans;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 21px;
-  letter-spacing: 0em;
-  text-align: center;
-  background-color: $mainBtnColor;
-  border-radius: 22px;
-  height: 44px;
-  width: 161px;
-  cursor: pointer;
-  border-style: none;
-  color: $mainFontColor;
-  transition: border-radius 250ms;
-  &:hover {
-    border-bottom-right-radius: 50px;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-}
-.contacts__titlewhite {
-  font-family: DM Sans;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 21px;
-  letter-spacing: 0em;
-  text-align: center;
-  background-color: $secondaryBtnColor;
-  border-radius: 22px;
-  height: 44px;
-  width: 161px;
-  cursor: pointer;
-  border-style: none;
-  color: $headerFontColor;
-  transition: border-radius 250ms;
-  &:hover {
-    border-bottom-right-radius: 50px;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 10px;
+  &__titlewhite {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: $secondaryBtnColor;
+    border-radius: 22px;
+    height: 44px;
+    width: 161px;
+    cursor: pointer;
+    border-style: none;
+    color: $headerFontColor;
+    transition: border-radius 250ms;
+    &:hover {
+      border-bottom-right-radius: 50px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
   }
 }
