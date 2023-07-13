@@ -2,14 +2,14 @@
   "name": "parcel-project-template",
   "version": "1.1.0",
   "description": "",
-  "homepage": "https://github.com/VeranikaBabik/projekt-grupa-6",
+  "homepage": "https://weronikababik.github.io/projekt-grupa-6/",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /projekt-grupa-6/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/migace/parcel-project-template-pl-main.git"
+    "url": "git+https://weronikababik.github.io/projekt-grupa-6/"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
